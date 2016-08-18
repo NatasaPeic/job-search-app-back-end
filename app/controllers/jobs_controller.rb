@@ -1,10 +1,11 @@
-class JobsController < ApplicationController
+# for linter
+class JobsController < OpenReadController
   before_action :set_job, only: [:show, :update, :destroy]
 
   # GET /jobs
   # GET /jobs.json
   def index
-    @jobs = Job.all
+     @jobs = current_user.jobs
 
     render json: @jobs
   end
@@ -18,7 +19,7 @@ class JobsController < ApplicationController
   # POST /jobs
   # POST /jobs.json
   def create
-    @job = Job.new(job_params)
+     @job = current_user.jobs.build(job_params)
 
     if @job.save
       render json: @job, status: :created, location: @job
@@ -50,12 +51,15 @@ class JobsController < ApplicationController
   # private
 
     def set_job
-      @job = Job.find(params[:id])
+      @job = current_user.jobs.find(params[:id])
     end
 
     def job_params
-      params.require(:job).permit(:company_name, :position_name, :company_url, :requirements, :salary, :application_url, :notes, :applied, :contact)
+      params.require(:job).permit(
+        :company_name, :position_name, :company_url, :requirements, :salary,
+        :application_url, :notes, :applied, :contact, :user_id)
     end
 
-    private :set_job, :job_params
+    private :set_job, :job_params, :current_user
+
 end
