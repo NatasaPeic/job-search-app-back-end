@@ -1,12 +1,11 @@
 # for linter
-class JobsController < ProtectedController
+class JobsController < OpenReadController
   before_action :set_job, only: [:show, :update, :destroy]
 
   # GET /jobs
   # GET /jobs.json
   def index
-    @jobs = Job.all
-
+    @jobs = current_user.jobs
 
     render json: @jobs
   end
@@ -14,7 +13,8 @@ class JobsController < ProtectedController
   # GET /jobs/1
   # GET /jobs/1.json
   def show
-    render json: Job.find(params[:id])
+      render json: @job
+    # render json: Job.find(params[:id])
   end
 
   # POST /jobs
@@ -61,6 +61,6 @@ class JobsController < ProtectedController
         :application_url, :notes, :applied, :contact, :user_id)
     end
 
-    private :set_job, :job_params
+    private :set_job, :job_params, :current_user
 
 end
