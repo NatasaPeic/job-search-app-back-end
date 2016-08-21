@@ -5,7 +5,7 @@ class JobsController < ProtectedController
   # GET /jobs
   # GET /jobs.json
   def index
-    @jobs = current_user.jobs
+    @jobs = Job.all
 
 
     render json: @jobs
@@ -14,7 +14,7 @@ class JobsController < ProtectedController
   # GET /jobs/1
   # GET /jobs/1.json
   def show
-    render json: @job
+    render json: Job.find(params[:id])
   end
 
   # POST /jobs
@@ -61,6 +61,6 @@ class JobsController < ProtectedController
         :application_url, :notes, :applied, :contact, :user_id)
     end
 
-    private :set_job, :job_params, :current_user
+    private :set_job, :job_params
 
 end
