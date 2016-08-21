@@ -3,7 +3,7 @@
 
 Front end: https://github.com/NatasaPeic/job-search-app-front-end
 
-Link to live-application:
+Link to live-application: https://natasapeic.github.io/job-search-app-front-end
 
 # Technologies used
 
