@@ -13,8 +13,9 @@ class JobsController < OpenReadController
   # GET /jobs/1
   # GET /jobs/1.json
   def show
-      render json: @job
-    # render json: Job.find(params[:id])
+    # BUGGGGGGGGGGGGG!!!!!!!!!!!!!!!!!!!
+      # render json: @job
+    render json: Job.find(params[:id])
   end
 
   # POST /jobs
