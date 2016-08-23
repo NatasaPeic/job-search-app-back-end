@@ -6,7 +6,10 @@ Front end: https://github.com/NatasaPeic/job-search-app-front-end
 Link to live-application: https://natasapeic.github.io/job-search-app-front-end
 
 
+
+
 # PostgreSQL Data Structure
+
 
 Users table
 
@@ -18,6 +21,8 @@ Users table
 |      |        |         |
 |      |        |         |
 |      |        |         |
+
+
 
 
 Jobs table
@@ -47,10 +52,10 @@ Jobs table
 # Technologies used
 
 
-- Web application framework: Rails;
+- Web application framework: Ruby on Rails;
 - Database: PostgreSQL.
 
-Deployment platform: Heroku
+- Deployment platform: Heroku
 
 
 
