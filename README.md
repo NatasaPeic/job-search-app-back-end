@@ -16,6 +16,8 @@ Users table
 |      |        |         |
 |      |        |         |
 |      |        |         |
+|      |        |         |
+|      |        |         |
 
 
 Jobs table
@@ -23,6 +25,8 @@ Jobs table
 | ID   | position_name | company_name | company_url | requirements |
 |------|---------------|--------------|-------------|--------------|
 |      |               |              |             |              |  ......
+|      |               |              |             |              |
+|      |               |              |             |              |
 |      |               |              |             |              |
 |      |               |              |             |              |
 |      |               |              |             |              |
@@ -35,14 +39,18 @@ Jobs table
 |        |                 |        |             |          |           |
 |        |                 |        |             |          |           |
 |        |                 |        |             |          |           |
+|        |                 |        |             |          |           |
+|        |                 |        |             |          |           |
+
 
 
 # Technologies used
 
-- Ruby,
-- Rails,
-- PostgreSQL.
 
+- Web application framework: Rails;
+- Database: PostgreSQL.
+
+Deployment platform: Heroku
 
 
 
