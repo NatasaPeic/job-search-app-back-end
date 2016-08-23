@@ -20,28 +20,29 @@ Users table
 
 Jobs table
 
-| ID   | position_name | company_name | company_url | requirements | Salary | application_url | notes | applied | contact | user_id |
-|------|---------------|--------------|-------------|--------------|--------|-----------------|-------|---------|---------|---------|
-|      |               |              |             |              |        |                 |       |         |         |         |
-|      |               |              |             |              |        |                 |       |         |         |         |
-|      |               |              |             |              |        |                 |       |         |         |         |
-|      |               |              |             |              |        |                 |       |         |         |         |
+| ID   | position_name | company_name | company_url | requirements |
+|------|---------------|--------------|-------------|--------------|
+|      |               |              |             |              |  ......
+|      |               |              |             |              |
+|      |               |              |             |              |
+|      |               |              |             |              |
 
 
 
+| Salary | application_url | notes  | applied     | contact  |  user_id  |
+|--------|-----------------|--------|-------------|----------|-----------|
+|        |                 |        |             |          |           |
+|        |                 |        |             |          |           |
+|        |                 |        |             |          |           |
+|        |                 |        |             |          |           |
 
 
 # Technologies used
 
 - Ruby,
 - Rails,
-- PostgreSQL,
-- JavaScript,
-- jQuery,
-- AJAX,
-- HTML/CSS,
-- Bootstrap,
-- Handlebars.
+- PostgreSQL.
+
 
 
 
